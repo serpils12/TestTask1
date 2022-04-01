@@ -8,6 +8,7 @@ RUN openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout
 RUN mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/
 RUN apk add nginx
 ADD default.conf.template /etc/nginx/conf.d/default.conf.template
+ADD index.html /usr/share/nginx/html
 RUN apk add gettext
 ADD bashscript.sh bashscript.sh 
 RUN chmod +x bashscript.sh
