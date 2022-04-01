@@ -1,2 +1,2 @@
 # TestTask1
-TestTask1
+1.	A batch script will be created. This script will receive the PROXY_HOST and PROXY_PATH parameters that the user has sent, up to a maximum of five, and write these parameters into the default.conf. It will add a location section to default.conf for each PROXY_HOST / PROXY_PATH. E.g; While running docker, if the values of test and https://www.tubitak.gov.tr are given for PROXY_HOST and PROXY_PATH parameters, respectively, when the user goes to localhost:8085/test/ from the screen, https://www.tubitak.gov.tr will be automatically displayed.
